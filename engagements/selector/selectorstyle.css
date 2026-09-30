@@ -1,0 +1,22 @@
+footer p {
+    color: darkgreen;
+}
+main p {
+    color: deeppink;
+}
+header h1 {
+    color: darkcyan;
+}
+#maintitle {
+    color: goldenrod;
+}
+.violet {
+    color: violet;
+}
+.copy{
+    font-size: x-large;
+    font-weight: 700;
+}
+main h2 {
+    color: slateblue;
+}
