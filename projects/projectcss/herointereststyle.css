@@ -1,0 +1,15 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    color: rgb(95, 80, 150);
+    background-color: aliceblue;
+}
+.notice {
+    color: rgb(255, 71, 215);
+}
+.deflect {
+    color: rgb(165, 149, 252);
+}
+#lala{
+    font-style: italic;
+}
