@@ -1,3 +1,8 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(48, 6, 58);
+    color: aliceblue;
+}
+#copy {
+    color: rgb(190, 133, 243);
 }
