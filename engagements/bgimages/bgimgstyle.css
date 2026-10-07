@@ -1,0 +1,14 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkred;
+    background: url(canvastexture.jpg) repeat antiquewhite;
+}
+.rose {
+    width: 250px;
+}
+main {
+    background: url(redFlowerSmall.png) no-repeat bottom right;
+}
+.flowers {
+    list-style-image: url(dotdot.png);
+}
