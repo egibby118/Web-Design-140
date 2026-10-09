@@ -1,0 +1,22 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(47, 42, 114);
+    background-image: url(bluebackground.jpg);
+    background-color: aqua;
+    font-weight: 600;
+}
+nav a {
+color: rgb(190, 8, 160);
+}
+.current {
+    color: rgb(250, 245, 176);
+}
+li {
+    color: rgb(228, 24, 133);
+}
+.star {
+    list-style-image: url(pystar.png);
+}
+main {
+    background: url(flowerplumerias.png) no-repeat top right;
+}
