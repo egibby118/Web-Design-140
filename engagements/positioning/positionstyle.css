@@ -1,0 +1,25 @@
+body {
+    color: rgb(56, 204, 197);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(24, 7, 46);
+}
+p {
+    color: rgb(255, 87, 115);
+}
+nav a {
+    color: rgb(253, 253, 46);
+}
+.neonfish {
+    border: 5px solid yellow;
+    width: 300px;
+    overflow: hidden;
+}
+.neonfish img {
+    width: 100%;
+}
+.enforce {
+    clear: both;
+}
+#floatfig {
+    float: right;
+}
