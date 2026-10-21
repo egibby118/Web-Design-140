@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(145, 0, 36);
+    color: salmon;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav a {
+    color: rgb(197, 86, 241);
+}
+.card {
+    border: solid 3px rgb(255, 224, 158);
+    padding: 10px;
+    width: 50px;
+}
+.parent {
+    display: flex;
+    flex-flow: row wrap;
+    /*felx-flow: row-wrap; this is a comment! It's ignored by the program.*/
+    gap: 10px;
+}
