@@ -1,0 +1,53 @@
+body {
+    background-color: midnightblue;
+    color: rgb(208, 236, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+nav a {
+    background-color: rgb(147, 209, 238);
+    color: rgb(204, 7, 99);
+    display: block;
+    padding: 10px 15px;
+}
+.card {
+    border: solid 3px rgb(204, 7, 99);
+    padding: 10px;
+    width: 150px;
+    height: 250px;
+}
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+aside {
+    border: solid 3px rgb(204, 7, 99);
+    float: left;
+    padding: 50px;
+}
+.title {
+    margin: 2px;
+}
+#newstitle {
+    padding-bottom: 300px;
+}
+.linkparent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+header {
+    background-color: rgb(204, 7, 99);
+    padding: 20px;
+    font-size: larger;
+}
+.enforce {
+    clear: both;
+}
+footer a {
+    color: rgb(204, 7, 99);
+}
