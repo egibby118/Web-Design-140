@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(099, 058, 052);
+    color: blanchedalmond;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+html {
+    margin: 0;
+}
+nav a {
+    color: rgb(216, 123, 46);
+    background-color: blanchedalmond;
+    padding: 15px 20px;
+    display: block
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(216, 123, 46);
+}
+header {
+    background-color: rgb(216, 123, 46);
+    padding: 25px;
+}
+header h1 {
+    margin: 0px;
+}
+.parent {
+    display: flex;
+}
+.sidebar {
+    width: 25%;
+    background-color: rgb(175, 101, 72);
+}
+main {
+    width: 75%;
+}
+.card {
+    border: thin solid blanchedalmond;
+    border-radius: 10px;
+    width: 250px;
+}
+.card img {
+    width: 100%;
+}
+.card h2 {
+    margin: 0;
+}
+.card a {
+    display: block;
+    padding: 10px;
+    background-color: rgb(216, 123, 46);
+    width: 80%;
+    margin-bottom: 0px 5px auto;
+    color: blanchedalmond;
+    border-radius: 5px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+@media print {
+    nav {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .card {
+    break-inside: avoid;
+    }
+}
