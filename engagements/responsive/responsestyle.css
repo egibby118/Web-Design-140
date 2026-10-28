@@ -10,8 +10,14 @@ html {
 nav a {
     color: rgb(216, 123, 46);
     background-color: blanchedalmond;
+    text-decoration: none;
     padding: 15px 20px;
     display: block
+}
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgb(175, 101, 72);
+    color: blanchedalmond;
 }
 nav {
     display: flex;
@@ -56,9 +62,31 @@ main {
     border-radius: 5px;
 }
 .container {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+}
+@media ONLY screen AND (max-width: 680px) {
+    .parent {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+    .card {
+        width: 90%;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        border-bottom: 10px solid rgb(216, 123, 46);
+        padding: 15px 10px;
+    }
 }
 @media print {
     nav {
