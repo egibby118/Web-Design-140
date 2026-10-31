@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(229, 130, 238);
+    color: rgb(103, 25, 175);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+html {
+    margin: 0;
+}
+nav a {
+    background-color: rgb(169, 213, 243);
+    color: rgb(17, 100, 173);
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    border: thin solid;
+    border-radius: 10px;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgb(17, 100, 173);
+    color: rgb(169, 213, 243);
+}
+header {
+    background-color:  rgb(169, 213, 243);
+    padding: 30px;
+    border: thin solid;
+    border-radius: 10px;
+}
+.parent {
+    display: flex;
+}
+.sidebar {
+    width: 25%;
+    background-color: rgb(169, 213, 243);
+    border: thin solid;
+    border-radius: 10px;
+}
+.card {
+    border: thin solid rgb(17, 100, 173);
+    background-color: rgb(169, 213, 243);
+    border-radius: 10px;
+    width: 350px;
+}
+.card img {
+    width: 100%;
+}
+.card h2 {
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+main {
+    width: 75%;
+}
+@media ONLY screen AND (max-width: 700px) {
+    .parent {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+    .card {
+        width: 90%;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        padding: 15px 10px;
+    }
+}
+@media print {
+    nav {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .card {
+    break-inside: avoid;
+    }
+}
