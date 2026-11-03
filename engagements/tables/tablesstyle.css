@@ -1,0 +1,35 @@
+body {
+    background-color: gold;
+    color: crimson;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+html {
+    margin: 0;
+}
+nav a {
+    color: rgb(246, 255, 119);
+    background-color: crimson;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 15px;
+}
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgb(245, 56, 94);
+    color: rgb(255, 252, 205);
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+table {
+    border: 3px solid crimson;
+}
+td {
+    border: 2px solid crimson;
+}
+th {
+    border: 2px solid crimson;
+}

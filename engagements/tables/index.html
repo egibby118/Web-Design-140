@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="tablesstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Emma's Web Design Site</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <h2>Class Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Department</th>
+                    <th>Course Number</th>
+                    <th>Title</th>
+                    <th>Location</th>
+                    <th>Time</th>
+                    <th>Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" colspan="6">Fall 2026</th>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>101</td>
+                    <td>College Writing</td>
+                    <td>Stake Center</td>
+                    <td>10:00 AM</td>
+                    <td>3 credits</td>
+                </tr>
+                <tr>
+                    <td>Art</td>
+                    <td>210</td>
+                    <td>Design</td>
+                    <td>Library</td>
+                    <td>12:00 PM</td>
+                    <td>3 credits</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>110</td>
+                    <td>Web Design</td>
+                    <td>Portable 3</td>
+                    <td>2:00 PM</td>
+                    <td>2 credits</td>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" colspan="6">Winter 2027</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Art</td>
+                    <td>210</td>
+                    <td>Art History</td>
+                    <td>Library</td>
+                    <td>12:00 PM</td>
+                    <td>3 credits</td>
+                </tr>
+                <tr>
+                    <td>210</td>
+                    <td>Painting Concepts</td>
+                    <td>MCK</td>
+                    <td>8:00 AM</td>
+                    <td>3 credits</td>
+                </tr>
+                <tr>
+                    <td>Psychology</td>
+                    <td>101</td>
+                    <td>Basics of Psychology</td>
+                    <td>Science Building</td>
+                    <td>10:00 AM</td>
+                    <td>2 credits</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="5">Total Credits</th>
+                    <td>16 credits</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <p>&copy;2026 Emma Gibson</p>
+    </footer>
+</body>
+</html>
