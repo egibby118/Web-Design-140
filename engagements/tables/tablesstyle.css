@@ -24,12 +24,29 @@ nav {
     display: flex;
     justify-content: space-around;
 }
-table {
-    border: 3px solid crimson;
-}
-td {
+#schedule th, #schedule thead th {
     border: 2px solid crimson;
+    padding: 5px;
+    background-color: rgb(81, 81, 250);
+    color: rgb(226, 242, 255);
+    border-bottom: 2px;
 }
-th {
-    border: 2px solid crimson;
+#schedule tbody tr:nth-child(even) {
+    background-color: rgb(255, 239, 168);
+}
+#schedule tbody tr td:last-child {
+    text-align: right;
+}
+#schedule tbody tr:hover {
+    background-color: aqua;
+}
+#schedule {
+    border: 5px solid crimson;
+    border-collapse: collapse;
+}
+#schedule caption {
+    caption-side: top;
+}
+.mobile {
+    overflow-x: auto;
 }

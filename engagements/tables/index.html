@@ -17,79 +17,88 @@
     </nav>
     <main>
         <h2>Class Schedule</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Department</th>
-                    <th>Course Number</th>
-                    <th>Title</th>
-                    <th>Location</th>
-                    <th>Time</th>
-                    <th>Credits</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="rowgroup" colspan="6">Fall 2026</th>
-                </tr>
-                <tr>
-                    <td>English</td>
-                    <td>101</td>
-                    <td>College Writing</td>
-                    <td>Stake Center</td>
-                    <td>10:00 AM</td>
-                    <td>3 credits</td>
-                </tr>
-                <tr>
-                    <td>Art</td>
-                    <td>210</td>
-                    <td>Design</td>
-                    <td>Library</td>
-                    <td>12:00 PM</td>
-                    <td>3 credits</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td>110</td>
-                    <td>Web Design</td>
-                    <td>Portable 3</td>
-                    <td>2:00 PM</td>
-                    <td>2 credits</td>
-                </tr>
-                <tr>
-                    <th scope="rowgroup" colspan="6">Winter 2027</th>
-                </tr>
-                <tr>
-                    <td rowspan="2">Art</td>
-                    <td>210</td>
-                    <td>Art History</td>
-                    <td>Library</td>
-                    <td>12:00 PM</td>
-                    <td>3 credits</td>
-                </tr>
-                <tr>
-                    <td>210</td>
-                    <td>Painting Concepts</td>
-                    <td>MCK</td>
-                    <td>8:00 AM</td>
-                    <td>3 credits</td>
-                </tr>
-                <tr>
-                    <td>Psychology</td>
-                    <td>101</td>
-                    <td>Basics of Psychology</td>
-                    <td>Science Building</td>
-                    <td>10:00 AM</td>
-                    <td>2 credits</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th scope="row" colspan="5">Total Credits</th>
-                    <td>16 credits</td>
-                </tr>
-            </tfoot>
-        </table>
+        <div class="mobile">
+            <table id="schedule">
+                <caption>My Class Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Department</th>
+                        <th>Course Number</th>
+                        <th>Title</th>
+                        <th>Location</th>
+                        <th>Time</th>
+                        <th>Credits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="rowgroup" colspan="6">Fall 2026</th>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>101</td>
+                        <td>College Writing</td>
+                        <td>STC</td>
+                        <td>10:00 AM</td>
+                        <td>3 credits</td>
+                    </tr>
+                    <tr>
+                        <td>Art</td>
+                        <td>210</td>
+                        <td>Design</td>
+                        <td>Library</td>
+                        <td>12:00 PM</td>
+                        <td>3 credits</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>110</td>
+                        <td>Web Design</td>
+                        <td>P 3</td>
+                        <td>2:00 PM</td>
+                        <td>2 credits</td>
+                    </tr>
+                    <tr>
+                        <th scope="rowgroup" colspan="6">Winter 2027</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Art</td>
+                        <td>210</td>
+                        <td>Art History</td>
+                        <td>Library</td>
+                        <td>12:00 PM</td>
+                        <td>3 credits</td>
+                    </tr>
+                    <tr>
+                        <td>210</td>
+                        <td>Painting Concepts</td>
+                        <td>MCK</td>
+                        <td>8:00 AM</td>
+                        <td>3 credits</td>
+                    </tr>
+                    <tr>
+                        <td>Psychology</td>
+                        <td>101</td>
+                        <td>Basics of Psychology</td>
+                        <td>SCB</td>
+                        <td>10:00 AM</td>
+                        <td>2 credits</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="5">Total Credits</th>
+                        <td>16 credits</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <h2>Why don't we use the border attribute?</h2>
+        <p>Because it's outdated and using CSS is easier and makes the HTML code less cluttered.</p>
+        <h2>What is the easiest way to color every other row a different color?</h2>
+        <p>Use the tag tbody tr:nth-child(even/odd)</p>
+        <h2>What does the value in the parentheses of your structural pseudo-class mean? Give one other value you could use and which rows it would select.</h2>
+        <p>The word in the parentheses tells your CSS what rows to change. You could make it even to change rows 2,4,6,8,etc. You could use odd to change rows 1,3,5,6,etc.</p>
     </main>
     <footer>
         <p>&copy;2026 Emma Gibson</p>
