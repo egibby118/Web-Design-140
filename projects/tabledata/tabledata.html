@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Data</title>
+    <link rel="stylesheet" href="datastyle.css">
 </head>
 <body>
     <header>
@@ -14,9 +15,61 @@
         <a href="#">About</a>
         <a href="#">Contact</a>
     </nav>
-    <main>
-        <h2>Data Lorem</h2>
-    </main>
+    <div class="parent">
+        <div class="sidebar">
+            <h2>Info</h2>
+            <p>One way of catagorizing the success of a movie is by tracking how much money it made at the box office. It looks at how much money a movie made through ticket sales.</p>
+        </div>
+        <main>
+            <h2>Movies: Biggest Box Office Hits of 2026*</h2>
+            <p><em>*As of Novermber 2026</em></p>
+                <div class="mobile">
+                    <table id="movies">
+                        <caption>Top 5 Box Office Hits of 2026</caption>
+                        <thead>
+                            <tr>
+                                <th>Movie Name</th>
+                                <th>Worldwide Profit</th>
+                                <th>Domestic Profit</th>
+                                <th>Percentage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Spider-Man: Brand New Day</td>
+                                <td>$2,519,622,766</td>
+                                <td>$958,886,996</td>
+                                <td>38.1%</td>
+                            </tr>
+                            <tr>
+                                <td>The Odyssey</td>
+                                <td>$1,799,231,435</td>
+                                <td>$625,595,435</td>
+                                <td>34.8%</td>
+                            </tr>
+                            <tr>
+                                <td>Toy Story 5</td>
+                                <td>$1,149,397,987</td>
+                                <td>$480,294,461</td>
+                                <td>41.8%</td>
+                            </tr>
+                            <tr>
+                                <td>Michael</td>
+                                <td>$1,028,703,388</td>
+                                <td>$372,303,388</td>
+                                <td>36.2%</td>
+                            </tr>
+                            <tr>
+                                <td>The Super Mario Galaxy Movie</td>
+                                <td>$1,013,000,136</td>
+                                <td>$429,814,610</td>
+                                <td>42.4%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </main>
+    </div>
     <footer>
         <p>&copy;2026 Emma Gibson</p>
     </footer>
