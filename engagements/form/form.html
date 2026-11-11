@@ -18,42 +18,57 @@
     <main>
         <h2>Forms</h2>
         <form action="formprocessing.html" method="post">
-            <div class="formbreak">
-                <label for="personname">Full Name</label>
-                <input id="personname" type="text" name="fullname" placeholder="Full Name">
-            </div>
-            <div class="formbreak">
-                <label for="emailname">Email</label>
-                <input id="emailname" type="text" name="email" placeholder="janedoe@email.com">
-            </div>
-            <div class="formbreak">
-                <label for="passname">Password</label>
-                <input id="passname" type="password" name="pass">
-            </div>
-            <div class="formbreak">
-                <input type="submit">
-            </div>
-            <div class="formbreak">
-                <label for="state">States</label>
-                <select name="state" id="state">
-                    <option value="blank">-------</option>
-                    <option value="IL">Illinois</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="WV">West Virginia</option>
-                </select>
-            </div>
-            <div class="formbreak">
-                <label for="radioname">Radio Button</label>
-                <input id="radioname" type="radio" name="radio">
-            </div>
-            <div class="formbreak">
-                <label for="checkname">Check Box</label>
-                <input id="checkname" type="checkbox" name="checkbox">
-            </div>
-            <div class="formbreak">
-                <label for="numname">Number</label>
-                <input id="numname" type="number" name="number">
-            </div>
+            <fieldset>
+                <legend>Account</legend>
+                <div class="formbreak">
+                    <label for="personname">Full Name</label>
+                    <input id="personname" type="text" name="fullname" placeholder="Full Name">
+                </div>
+                <div class="formbreak">
+                    <label for="emailname">Email</label>
+                    <input id="emailname" type="text" name="email" placeholder="janedoe@email.com">
+                </div>
+                <div class="formbreak">
+                    <label for="passname">Password</label>
+                    <input id="passname" type="password" name="pass">
+                </div>
+                <div class="formbreak">
+                    <label for="state">States</label>
+                    <select name="state" id="state">
+                        <option value="blank">-------</option>
+                        <option value="IL">Illinois</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="WV">West Virginia</option>
+                    </select>
+                </div>
+                <div class="checkbreak">
+                    <div class="spacer">Gender</div>
+                    <label for="radioname"><input id="radioname" type="radio" name="gender">Male</label>
+                    <label for="radioname"><input id="radioname" type="radio" name="gender">Female</label>
+                </div>
+                <div class="checkbreak">
+                    <div class="spacer">Y/N?</div>
+                    <label for="checkname"><input id="checkname" type="checkbox" name="checkbox">Yes</label>
+                    <label for="checkname"><input id="checkname" type="checkbox" name="checkbox">No</label>
+                </div>
+                <div class="formbreak">
+                    <label for="numname">Number</label>
+                    <input id="numname" type="number" name="number">
+                </div>
+                <div class="formbreak">
+                    <label for="commentsname">Comments</label>
+                    <textarea name="commentsname" id="comments">
+                    </textarea>
+                </div>
+                <div class="formbreak">
+                    <label for="colorname">Color Picker</label>
+                    <input id="colorname" type="color" name="color">
+                </div>
+                <div class="formbreak">
+                    <div class="spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
         </form>
         <h2>The form tag has an "action" attribute. What does it do?</h2>
         <p>The action is what type of form you display.</p>
@@ -65,6 +80,12 @@
         <p>Text box- type in the text box. select box- select one of the options. checkbox- check one or more of the boxes. radio button- select one or more of the buttons.</p>
         <h2>List all the form controls that HTML5 added. Which ones did you put in your form?</h2>
         <p>The number and color.</p>
+        <h2>What are different ways to style your form?</h2>
+        <p>you can use fieldset to box it in, legend to give it a title, and focus in CSS to give it an effect when you hover over it.</p>
+        <h2>Why does the professor like to use flex?</h2>
+        <p>It is more flexible (ha) than grid and lets the children be able to govern themselves.</p>
+        <h2>What makes for a good mobile form?</h2>
+        <p>One that is easy to access for people with bad eye sight and large easily pressable buttons and options.</p>
     </main>
     <footer>
         <p>&copy;2026 Emma Gibson</p>

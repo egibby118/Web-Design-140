@@ -15,3 +15,38 @@ nav a {
     display: block;
     border-radius: 5px;
 }
+fieldset {
+    background-color: wheat;
+    color: rgb(160, 84, 53);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 5px solid;
+    box-shadow: 3px 3px 3px rgb(156, 131, 83);
+}
+.formbreak input {
+    padding: 5px;
+    background-color: antiquewhite;
+}
+.formbreak input:hover {
+    background-color: blue;
+}
+.formbreak, .checkbreak{
+    margin: 10px 0;
+    display: flex;
+    gap: 15px;
+}
+.formbreak label {
+    width: 150px;
+    text-align: right;
+}
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+@media ONLY screen AND (max-width: 500px) {
+    .formbreak, .checkbreak {
+        flex-direction: column;
+    }
+    .formbreak label {
+        text-align: left;
+    }
+}
