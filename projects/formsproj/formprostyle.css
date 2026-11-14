@@ -1,0 +1,68 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightpink;
+    color: rgb(226, 43, 171);
+}
+header {
+    background-color: rgb(209, 68, 197);
+    color: rgb(245, 239, 181);
+    border: 5px solid rgb(209, 68, 197);
+    border-radius: 15px;
+    font-size: larger;
+}
+footer {
+    background-color: rgb(209, 68, 197);
+    color: rgb(245, 239, 181);
+    border: 5px 5px solid rgb(209, 68, 197);
+    border-radius: 15px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    color: rgb(245, 239, 181);
+    background-color: rgb(209, 68, 197);
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 15px;
+}
+fieldset {
+    background-color: rgb(245, 239, 181);
+    color: rgb(209, 68, 197);
+    border: 5px solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(238, 139, 154);
+}
+.formbreak input {
+    padding: 5px;
+    background-color: rgb(250, 215, 228);
+    border: 3px solid rgb(209, 68, 197);
+    border-radius: 15px;
+}
+.formbreak input:hover {
+    background-color: rgb(225, 76, 255);
+}
+.formbreak, .checkbreak{
+    margin: 10px 0;
+    display: flex;
+    gap: 15px;
+    text-align: left;
+}
+.formbreak label {
+    width: 150px;
+    text-align: left;
+}
+.spacer {
+    width: 150px;
+    text-align: left;
+}
+@media ONLY screen AND (max-width: 500px) {
+    .formbreak, .checkbreak {
+        flex-direction: column;
+    }
+    .formbreak label {
+        text-align: left;
+    }
+}
