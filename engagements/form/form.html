@@ -17,20 +17,20 @@
     </nav>
     <main>
         <h2>Forms</h2>
-        <form action="formprocessing.html" method="post">
+        <form action="formprocessing.html" method="post" id="myform">
             <fieldset>
                 <legend>Account</legend>
                 <div class="formbreak">
                     <label for="personname">Full Name</label>
-                    <input id="personname" type="text" name="fullname" placeholder="Full Name">
+                    <input id="personname" type="text" name="personname" placeholder="Full Name">
                 </div>
                 <div class="formbreak">
                     <label for="emailname">Email</label>
-                    <input id="emailname" type="text" name="email" placeholder="janedoe@email.com">
+                    <input id="emailname" type="text" name="emailname" placeholder="janedoe@email.com">
                 </div>
                 <div class="formbreak">
                     <label for="passname">Password</label>
-                    <input id="passname" type="password" name="pass">
+                    <input id="passname" type="password" name="passname">
                 </div>
                 <div class="formbreak">
                     <label for="state">States</label>
@@ -86,9 +86,40 @@
         <p>It is more flexible (ha) than grid and lets the children be able to govern themselves.</p>
         <h2>What makes for a good mobile form?</h2>
         <p>One that is easy to access for people with bad eye sight and large easily pressable buttons and options.</p>
+        <h2>What is JavaScript? How did it get its name?</h2>
+        <p>JavaScript is a programming language. It got its name from the original company Java.</p>
+        <h2>What are the two ways you can run JavaScript?</h2>
+        <p>You can either run it inside of a web browser (or a DOM) or through a library called nodeJS.</p>
+        <h2>What is jQuery? Is it still popular today?</h2>
+        <p>jQuery is . It is .</p>
+        <h2>What is the most popular front-end js library today?</h2>
+        <p>pioi</p>
+        <h2>How does your code prevent the form from being submitted? Why do we need to prevent it?</h2>
+        <p>The code . </p>
     </main>
     <footer>
         <p>&copy;2026 Emma Gibson</p>
     </footer>
+    <script>
+        document.getElementById('myform').addEventListener('submit',function(event) {event.preventDefault});
+        alert("Form Submitted");
+
+        const personname = document.getElementById('personname').value;
+        const emailname = document.getElementById('emailname').value;
+        const passname = document.getElementById('passname').value;
+        
+        if (!personname || !emailname) {
+            alert("You need a name and email.");
+            return;
+        }
+        
+        const formData = {
+            name: personname,
+            email: emailname,
+            password: passname
+        };
+
+        console.log(formData);
+    </script>
 </body>
 </html>
