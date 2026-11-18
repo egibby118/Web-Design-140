@@ -17,24 +17,25 @@
     </nav>
     <main>
         <h2>Forms</h2>
+        <div id="message"></div>
         <form action="formprocessing.html" method="post" id="myform">
             <fieldset>
                 <legend>Account</legend>
                 <div class="formbreak">
-                    <label for="personname">Full Name</label>
-                    <input id="personname" type="text" name="personname" placeholder="Full Name">
+                    <label for="person">Full Name</label>
+                    <input id="person" type="text" name="personname" placeholder="Full Name">
                 </div>
                 <div class="formbreak">
-                    <label for="emailname">Email</label>
-                    <input id="emailname" type="text" name="emailname" placeholder="janedoe@email.com">
+                    <label for="email">Email</label>
+                    <input id="email" type="text" name="emailname" placeholder="janedoe@email.com">
                 </div>
                 <div class="formbreak">
-                    <label for="passname">Password</label>
-                    <input id="passname" type="password" name="passname">
+                    <label for="pass">Password</label>
+                    <input id="passname" type="password" name="passwords">
                 </div>
                 <div class="formbreak">
-                    <label for="state">States</label>
-                    <select name="state" id="state">
+                    <label for="states">States</label>
+                    <select name="state" id="statename">
                         <option value="blank">-------</option>
                         <option value="IL">Illinois</option>
                         <option value="HI">Hawaii</option>
@@ -43,26 +44,26 @@
                 </div>
                 <div class="checkbreak">
                     <div class="spacer">Gender</div>
-                    <label for="radioname"><input id="radioname" type="radio" name="gender">Male</label>
-                    <label for="radioname"><input id="radioname" type="radio" name="gender">Female</label>
+                    <label for="radios"><input id="radioname" type="radio" name="gender">Male</label>
+                    <label for="radios"><input id="radioname" type="radio" name="gender">Female</label>
                 </div>
                 <div class="checkbreak">
                     <div class="spacer">Y/N?</div>
-                    <label for="checkname"><input id="checkname" type="checkbox" name="checkbox">Yes</label>
-                    <label for="checkname"><input id="checkname" type="checkbox" name="checkbox">No</label>
+                    <label for="checks"><input id="checkname" type="checkbox" name="checkboxes">Yes</label>
+                    <label for="checks"><input id="checkname" type="checkbox" name="checkboxes">No</label>
                 </div>
                 <div class="formbreak">
-                    <label for="numname">Number</label>
-                    <input id="numname" type="number" name="number">
+                    <label for="numbered">Number</label>
+                    <input id="numname" type="number" name="numbers">
                 </div>
                 <div class="formbreak">
-                    <label for="commentsname">Comments</label>
-                    <textarea name="commentsname" id="comments">
+                    <label for="comment">Comments</label>
+                    <textarea name="comments" id="commentname">
                     </textarea>
                 </div>
                 <div class="formbreak">
-                    <label for="colorname">Color Picker</label>
-                    <input id="colorname" type="color" name="color">
+                    <label for="colored">Color Picker</label>
+                    <input id="colorname" type="color" name="colors">
                 </div>
                 <div class="formbreak">
                     <div class="spacer"></div>
@@ -101,11 +102,12 @@
         <p>&copy;2026 Emma Gibson</p>
     </footer>
     <script>
-        document.getElementById('myform').addEventListener('submit',function(event) {event.preventDefault});
-        alert("Form Submitted");
+        document.getElementById('myform').addEventListener('submit', function(event) {
+            event.preventDefault();           
+            alert("Form Submitted");
 
-        const personname = document.getElementById('personname').value;
-        const emailname = document.getElementById('emailname').value;
+        const personname = document.getElementById('person').value;
+        const emailname = document.getElementById('email').value;
         const passname = document.getElementById('passname').value;
         
         if (!personname || !emailname) {
@@ -120,6 +122,23 @@
         };
 
         console.log(formData);
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "submit.json", true);
+        xhr.setRequestHeader ("Content-Type", "application/json;charset=UTF-8");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+            message = document.getElementById('message');
+            const response = JSON.parse(xhr.responseText);
+            message.textContent = response.message;
+            form = document.getElementById('myform');
+            form.reset();
+            } else if (xhr.readyState === 4) {
+                alert('Error submitting form.');
+            }
+        }
+        xhr.send(JSON.stringify(formData));
+        alert('Success!');
+    })
     </script>
 </body>
 </html>
