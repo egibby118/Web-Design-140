@@ -71,74 +71,10 @@
                 </div>
             </fieldset>
         </form>
-        <h2>The form tag has an "action" attribute. What does it do?</h2>
-        <p>The action is what type of form you display.</p>
-        <h2>The form tag has a "method" attribute. What does it do?</h2>
-        <p>The method declares whether you are doing a Post or Get request.</p>
-        <h2>What is the difference between a "POST" and a "GET"?</h2>
-        <p>Post sends the inputted info more securely while Get puts the inputs in the URL on the next page. Post can change thw website while Get simply retrieves the info without changing things.</p>
-        <h2>How do you fill in a form control with a pre-set value, and how is that different from a placeholder? Answer for each of these: text box, textarea, select box, checkbox, and radio button.</h2>
-        <p>Text box- type in the text box. select box- select one of the options. checkbox- check one or more of the boxes. radio button- select one or more of the buttons.</p>
-        <h2>List all the form controls that HTML5 added. Which ones did you put in your form?</h2>
-        <p>The number and color.</p>
-        <h2>What are different ways to style your form?</h2>
-        <p>you can use fieldset to box it in, legend to give it a title, and focus in CSS to give it an effect when you hover over it.</p>
-        <h2>Why does the professor like to use flex?</h2>
-        <p>It is more flexible (ha) than grid and lets the children be able to govern themselves.</p>
-        <h2>What makes for a good mobile form?</h2>
-        <p>One that is easy to access for people with bad eye sight and large easily pressable buttons and options.</p>
-        <h2>What is JavaScript? How did it get its name?</h2>
-        <p>JavaScript is a programming language. It got its name from the original company Java.</p>
-        <h2>What are the two ways you can run JavaScript?</h2>
-        <p>You can either run it inside of a web browser (or a DOM) or through a library called nodeJS.</p>
-        <h2>What is jQuery? Is it still popular today?</h2>
-        <p>jQuery is . It is .</p>
-        <h2>What is the most popular front-end js library today?</h2>
-        <p>pioi</p>
-        <h2>How does your code prevent the form from being submitted? Why do we need to prevent it?</h2>
-        <p>The code . </p>
     </main>
     <footer>
         <p>&copy;2026 Emma Gibson</p>
     </footer>
-    <script>
-        document.getElementById('myform').addEventListener('submit', function(event) {
-            event.preventDefault();           
-            alert("Form Submitted");
-
-        const personname = document.getElementById('person').value;
-        const emailname = document.getElementById('email').value;
-        const passname = document.getElementById('passname').value;
-        
-        if (!personname || !emailname) {
-            alert("You need a name and email.");
-            return;
-        }
-        
-        const formData = {
-            name: personname,
-            email: emailname,
-            password: passname
-        };
-
-        console.log(formData);
-        const xhr = new XMLHttpRequest();
-        xhr.open("GET", "submit.json", true);
-        xhr.setRequestHeader ("Content-Type", "application/json;charset=UTF-8");
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-            message = document.getElementById('message');
-            const response = JSON.parse(xhr.responseText);
-            message.textContent = response.message;
-            form = document.getElementById('myform');
-            form.reset();
-            } else if (xhr.readyState === 4) {
-                alert('Error submitting form.');
-            }
-        }
-        xhr.send(JSON.stringify(formData));
-        alert('Success!');
-    })
-    </script>
+    <script src="formprocessing.js"></script>
 </body>
 </html>
