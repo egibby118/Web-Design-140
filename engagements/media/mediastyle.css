@@ -1,0 +1,51 @@
+body {
+    background-color: dimgray;
+    color: rgb(27, 46, 46);
+}
+nav a {
+    background-color: rgb(243, 46, 46);
+    color: rgb(131, 21, 21);
+    text-decoration: none;
+    padding: 17px 20px;
+    display: block;
+    border: thin solid;
+    border-radius: 15px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+iframe {
+    border: 0;
+}
+#bear {
+    margin: 0;
+    transform: scale(1.5);
+}
+#nat {
+    display: block;
+    padding-top: 100px;
+}
+#butdiv {
+    display: flex;
+    justify-content: space-around;
+}
+#button {
+    display: block;
+    background-color: rgb(243, 46, 46);
+    color: rgb(131, 21, 21);
+    text-decoration: none;
+    padding: 15px 20px 15px;
+    display: block;
+    border: thin solid;
+    border-radius: 15px;
+    transition-property: background-color;
+    transition-duration: 1.5s;
+    transition-property: color;
+    transition-duration: 1.5s;
+}
+#button:hover {
+    text-decoration: underline;
+    background-color: rgb(131, 21, 21);
+    color: rgb(243, 46, 46);
+}
